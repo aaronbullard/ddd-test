@@ -25,6 +25,7 @@ class GraduateTest extends TestCase
         $address = new Address("121 Blake Rd", NULL, "Annapolis", "MD", "21402");
         $school = new School("University of Zurich", "Eureka!", $address);
 
+        // NOTE: Notice that the Graduation entity never exposed to the invoking code
         // Execute
         $scientist = new Scientist("Albert", "Einstein");
         $scientist->graduatedFrom($school, 1900);
